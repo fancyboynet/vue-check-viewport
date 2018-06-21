@@ -1,6 +1,6 @@
 {
   "name": "vue-check-viewport",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple vue component which can check the element whether in the specail(`window` default) viewport",
   "main": "dist/vue-check-viewport.js",
   "scripts": {
@@ -11,6 +11,10 @@
   "keywords": [
     "vue",
     "viewport"
+  ],
+  "files": [
+    "src",
+    "dist"
   ],
   "repository": {
     "type": "git",
