@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            background: #ccc;
+            height: 200px;
+            margin: 10px 0;
+            transition: 2s;
+        }
+        li.visited{
+            background: lime;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <vue-check-viewport tag="li" :class="{visited: item.visited}" v-for="(item, index) in list" @on-visible="onVisible(index)" @on-un-visible="onUnVisible(index)">{{ item.val }}</vue-check-viewport>
+    </ul>
+</div>
+</body>
+</html>
