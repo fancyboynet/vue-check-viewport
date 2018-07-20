@@ -52,6 +52,7 @@ if(process.env.NODE_ENV !== 'production'){
   })
 }else{
   module.exports = merge(basic, {
+    mode: 'production',
     entry: {
       'vue-check-viewport': "./src/vue-check-viewport.js"
     },

@@ -17,9 +17,11 @@ new Vue({
   },
   methods: {
     onVisible(index){
+      console.log('in', index)
       this.$set(this.list[index], 'visited', true)
     },
     onUnVisible(index){
+      console.log('out', index)
       this.$set(this.list[index], 'visited', false)
     }
   },

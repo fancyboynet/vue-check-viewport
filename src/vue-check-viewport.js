@@ -3,9 +3,9 @@ function createObserver (options) {
   observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if(entry.intersectionRatio < options.intersectionRatio){
-        entry.target.__vue__.$emit('on-un-visible')
+        entry.target.__vue__.onUnVisible()
       }else{
-        entry.target.__vue__.$emit('on-visible')
+        entry.target.__vue__.onVisible()
       }
     })
   }, options)
@@ -63,6 +63,9 @@ export default {
       }
     }
   },
+  data: {
+    isVisible: undefined
+  },
   render(createElement) {
     return createElement(
       this.tag,
@@ -98,9 +101,23 @@ export default {
     },
     listener(){
       if(isElementInViewport(this.$el, this.options)){
-        this.$emit('on-visible')
+        this.onVisible()
         return
       }
+      this.onUnVisible()
+    },
+    onVisible(){
+      if (this.isVisible === true){
+        return
+      }
+      this.isVisible = true
+      this.$emit('on-visible')
+    },
+    onUnVisible(){
+      if (this.isVisible === false){
+        return
+      }
+      this.isVisible = false
       this.$emit('on-un-visible')
     },
     destroyObserver(){
