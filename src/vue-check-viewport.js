@@ -63,8 +63,10 @@ export default {
       }
     }
   },
-  data: {
-    isVisible: undefined
+  data() {
+    return {
+      isVisible: undefined
+    }
   },
   render(createElement) {
     return createElement(
