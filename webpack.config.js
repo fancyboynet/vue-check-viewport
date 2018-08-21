@@ -35,7 +35,10 @@ const basic = {
             loader: 'eslint-loader'
           }
         ],
-        exclude: /node_modules/
+        exclude: [
+          /node_modules/,
+          path.resolve(__dirname, 'dist')
+        ]
       }
     ]
   }

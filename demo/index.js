@@ -25,16 +25,11 @@ let vm = new Vue({
     },
     removeTopOne () {
       this.list.shift()
-    },
-    reRenderTopOne () {
-      this.$refs.check[0].$forceUpdate()
     }
   },
   components: {
     VueCheckViewport
   },
-  mounted () {
-    console.log(this.$refs.check)
-  }
+  mounted () {}
 })
 vm.$mount('#app')
