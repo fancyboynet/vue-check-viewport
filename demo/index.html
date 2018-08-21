@@ -20,8 +20,12 @@
 </head>
 <body>
 <div id="app">
+    <div style="position: fixed;top: 0;left:0;width: 100%;padding: 5px;background: aliceblue;">
+        <button type="button" @click="removeTopOne">remove top one</button>
+        <button type="button" @click="reRenderTopOne">reRender top one</button>
+    </div>
     <ul>
-        <vue-check-viewport tag="li" :class="{visited: item.visited}" v-for="(item, index) in list" @on-visible="onVisible(index)" @on-un-visible="onUnVisible(index)">{{ item.val }}</vue-check-viewport>
+        <vue-check-viewport tag="li" :class="{visited: item.visited}" v-for="(item, index) in list" ref="check"  @on-visible="onVisible(index)" @on-un-visible="onUnVisible(index)">{{ item.val }}</vue-check-viewport>
     </ul>
 </div>
 </body>
