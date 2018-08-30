@@ -100,7 +100,7 @@ export default {
       window.addEventListener('load', this.listener, false)
       window.addEventListener('resize', this.listener, false)
       window.addEventListener('DOMContentLoaded', this.listener, false)
-      this.listener()
+      window.requestAnimationFrame(this.listener)
     },
     listener () {
       if (isElementInViewport(this.$el, this.options)) {
