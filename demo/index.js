@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueCheckViewport from '../src/vue-check-viewport'
 function createList () {
   let list = []
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 10; i++) {
     list.push({
       val: i,
       visited: false
