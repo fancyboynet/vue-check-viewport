@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import VueCheckViewport from '../src/vue-check-viewport'
+import VueCheckViewport from '../src/index'
 function createList () {
   let list = []
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 1000; i++) {
     list.push({
       val: i,
       visited: false

@@ -1,8 +1,8 @@
 {
   "name": "vue-check-viewport",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "A simple vue component which can check the element whether in the specail(`window` default) viewport",
-  "main": "dist/vue-check-viewport.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --progress --port 8007 --host 0.0.0.0",
