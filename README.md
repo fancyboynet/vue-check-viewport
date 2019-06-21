@@ -1,4 +1,4 @@
-# vue-check-viewport
+# @iggfe/vue-check-viewport
 A simple vue component which can check the element whether in the specail(`window` default) viewport
 
 ## features

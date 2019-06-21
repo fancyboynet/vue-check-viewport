@@ -1,5 +1,5 @@
 {
-  "name": "vue-check-viewport",
+  "name": "@iggfe/vue-check-viewport",
   "version": "0.1.0",
   "description": "A simple vue component which can check the element whether in the specail(`window` default) viewport",
   "main": "dist/index.js",
