@@ -6,7 +6,7 @@ A simple vue component which can check the element whether in the specail(`windo
 
 ## install
 ```bash
-$ npm i vue-check-viewport
+$ npm i @iggfe/vue-check-viewport
 ```
     
 ## usage
